@@ -1,0 +1,70 @@
+.Details {
+  margin: 0;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 10%);
+  padding: 1%;
+  align-items: center;
+  justify-items: center;
+}
+
+.CoundtryDetails {
+  height: 90%;
+  width: 90%;
+  margin-top: 0;
+  grid-row: 2/10;
+  grid-column: 1/11;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 10%);
+}
+
+.BigFlag {
+  grid-row: 2/10;
+  grid-column: 1/5;
+  width: 100%;
+  height: 100%;
+}
+
+.Big-description {
+  grid-row: 3/9;
+  grid-column: 6/10;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
+  cursor: default;
+}
+
+.Big-description > h4 {
+  grid-column: span 5;
+}
+
+.list {
+  grid-row: 2/5;
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: hsl(0, 0%, 52%);
+}
+
+.BorderCountries {
+  grid-row: 5/6;
+  grid-column: span 5;
+  display: flex;
+  align-items: center;
+}
+.BorderCountries > ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 52%);
+}
+.Black-ul > li {
+  background-color: hsl(208, 23%, 22%);
+}
