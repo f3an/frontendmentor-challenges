@@ -1,0 +1,99 @@
+.Content {
+  grid-row: span 9;
+  grid-column: span 10;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  background-color: hsl(0, 7%, 94%);
+}
+.Search_Filter {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search {
+  width: 50%;
+}
+
+#search {
+  height: 40px;
+  width: 50%;
+  border: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: default;
+}
+#search_button {
+  margin: 0;
+  height: 42px;
+  padding: 10px;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+}
+
+.filter {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#filter {
+  height: 40px;
+  width: 20%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.Countries {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Black-content {
+  background-color: hsl(207, 26%, 17%);
+  color: white;
+  height: 100%;
+}
+
+.Card {
+  margin: 20px;
+  padding: 0;
+  height: 300px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.description > h4 {
+  margin: 0;
+}
+
+.Black-card-mode {
+  background-color: hsl(210, 22%, 22%);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.Flag {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 150px;
+}
+
+.description {
+  padding: 20px;
+}
