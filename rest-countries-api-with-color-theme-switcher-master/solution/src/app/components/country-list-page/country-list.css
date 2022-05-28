@@ -1,0 +1,114 @@
+#country-list {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search-filter {
+    height: 75px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    text-align: center;
+    align-items: center;
+}
+
+#search-bar {
+    grid-column: span 2;
+}
+#search_button {
+    background-color: hsl(0, 0%, 100%);
+    height: 40px;
+    padding: 10px;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#search {
+    padding: 0px;
+    height: 40px;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.filter {
+    grid-column: 9/11;
+}
+
+#filter-select {
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#search:focus,
+#filter-select:focus {
+    outline: none;
+}
+
+.card {
+    height: 400px;
+    width: 350px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.flag {
+    height: 200px;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.description > h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.description > ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.description {
+    padding: 25px;
+}
+
+.dark-card-mode {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+.light-card-mode {
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2),
+        0 6px 20px 0 hsla(0, 0%, 0%, 0.2);
+    background-color: white;
+    color: hsl(200, 15%, 8%);
+}
+
+.dark-country-list {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+}
+.light-country-list {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+}
+
+.dark-search-filter {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+}
+.light-search-filter {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+}
