@@ -1,0 +1,106 @@
+.country-container {
+    padding: 10px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 10%);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    cursor: pointer;
+}
+
+.country-details {
+    grid-row: 2/8;
+    grid-column: 2/11;
+    padding: 10px;
+    display: grid;
+    cursor: default;
+    height: 90%;
+    width: 90%;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 10%);
+}
+
+.big-description > h4 {
+    grid-column: span 5;
+}
+
+.list {
+    grid-row: 2/5;
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: hsl(0, 0%, 52%);
+}
+
+.big-flag {
+    grid-row: 2/10;
+    grid-column: 1/5;
+    width: 100%;
+    height: 100%;
+}
+
+.light-flag {
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2),
+        0 3px 8px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.big-description {
+    grid-row: 3/9;
+    grid-column: 6/10;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    cursor: default;
+}
+
+.big-description > h2 {
+    grid-column: span 5;
+}
+
+.border-countries {
+    grid-row: 5/6;
+    grid-column: span 5;
+    display: flex;
+    align-items: center;
+}
+
+.border-countries > ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 52%);
+}
+
+.dark-ul > li {
+    background-color: hsl(208, 23%, 22%);
+}
+
+.light-ul > li {
+    background-color: white;
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2),
+        0 3px 8px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.dark-country-container {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+}
+.light-country-container {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+}

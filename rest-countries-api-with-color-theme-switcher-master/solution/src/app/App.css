@@ -1,8 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap");
+.App {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "Outfit", sans-serif;
+.White {
+    background-color: white;
+    color: hsl(200, 15%, 8%);
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.Black {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
 }
