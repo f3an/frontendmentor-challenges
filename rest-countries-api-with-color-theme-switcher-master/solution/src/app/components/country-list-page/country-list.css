@@ -1,0 +1,221 @@
+#country-list {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.search-filter {
+    height: 75px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    align-items: center;
+}
+
+#search-bar {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar-container {
+    width: max-content;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2),
+        0 6px 20px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+#search_button {
+    height: 40px;
+    padding: 10px;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#search {
+    padding: 0px;
+    height: 40px;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.filter {
+    grid-column: 9/11;
+}
+
+#filter-select {
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2),
+        0 6px 20px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+#search:focus,
+#filter-select:focus {
+    outline: none;
+}
+
+.card {
+    height: 400px;
+    width: 350px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.flag {
+    height: 200px;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.description > h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.description > ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.description {
+    padding: 25px;
+}
+
+.dark-card-mode {
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2),
+        0 6px 20px 0 hsla(0, 0%, 0%, 0.2);
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+.light-card-mode {
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2),
+        0 6px 20px 0 hsla(0, 0%, 0%, 0.2);
+    background-color: white;
+    color: hsl(200, 15%, 8%);
+}
+
+.dark-country-list {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+}
+.light-country-list {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+}
+
+.dark-search-filter {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+}
+.light-search-filter {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+}
+
+.dark-filter-select {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+.light-filter-select {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(200, 15%, 8%);
+}
+
+.dark-search {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+.light-search {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(200, 15%, 8%);
+}
+
+@media only screen and (max-width: 1440px) {
+    .card {
+        height: 360px;
+        width: 310px;
+    }
+    .flag {
+        height: 160px;
+        width: 310px;
+    }
+    .search-filter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 1420px) {
+    .card {
+        height: 340px;
+        width: 290px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .flag {
+        height: 150px;
+        width: 290px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .search-filter {
+        height: 75px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+
+        align-items: center;
+    }
+
+    #search-bar {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+    #search {
+        width: 400px;
+    }
+    .filter {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        display: flex;
+        margin: 5px;
+        justify-content: center;
+        margin-left: 0;
+    }
+    #filter-select {
+        width: 430px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #search {
+        width: 260px;
+    }
+
+    #filter-select {
+        width: 290px;
+    }
+}
