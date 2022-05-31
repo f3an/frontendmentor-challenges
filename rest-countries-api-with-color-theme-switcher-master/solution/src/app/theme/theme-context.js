@@ -6,5 +6,5 @@ export const themes = {
 };
 
 export const ThemeContext = React.createContext(
-    themes.theme // default value
+    themes.light // default value
 );
