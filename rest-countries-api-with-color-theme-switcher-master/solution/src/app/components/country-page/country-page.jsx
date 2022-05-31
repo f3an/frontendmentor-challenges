@@ -17,8 +17,16 @@ function CountryPage(props) {
             }-country-container country-container`}
         >
             <div className="btn-container">
-                <Link to="/">
-                    <button id="btn">Back</button>
+                <Link className="btn" to="/">
+                    <button
+                        className={`${
+                            // eslint-disable-next-line react/prop-types
+                            props.theme
+                        }-btn`}
+                        id="btn"
+                    >
+                        ⇦ Back
+                    </button>
                 </Link>
             </div>
 
