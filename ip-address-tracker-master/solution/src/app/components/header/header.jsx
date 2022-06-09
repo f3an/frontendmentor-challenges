@@ -1,14 +1,13 @@
 import './header.css';
 import React, { useContext } from 'react';
 import arrow from '../../images/icon-arrow.svg';
-// import useSearchByIp from '../../hooks/use-search-ip';
 
 function Header({ Context }) {
     const [, setVal] = useContext(Context);
     const clickHendler = () => {
         setVal(document.getElementById('search-by-ip').value);
     };
-    // console.log(useSearchByIp('11.11.11.11'));
+
     return (
         <div className="header">
             <h1>IP Addres Tracker</h1>
