@@ -1,0 +1,38 @@
+.ip-data-container {
+    position: absolute;
+    width: max-content;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 160px;
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 17%);
+    border-radius: 15px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2),
+        0 6px 20px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.list > li > label {
+    color: hsl(0, 0%, 59%);
+    font-size: small;
+}
+
+.list li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: -4px;
+    padding: 10px;
+}
+
+li > div {
+    margin: 5px;
+    padding: 20px;
+    border-left: 1px solid hsl(0, 0%, 59%);
+}
+#ip-address {
+    border-left: 0;
+}

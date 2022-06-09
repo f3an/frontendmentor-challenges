@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const API_Key = 'at_tTnGlRIUwqtzWaCmM2YLj7Jr5tzt4';
+const API_Key = 'at_2AsyijnrvdAqboByFJsf9M9pTAhhY';
 
 const useYourIp = (ip) => {
     const [ipData, setIpdata] = useState({});
@@ -8,8 +8,8 @@ const useYourIp = (ip) => {
     useEffect(() => {
         const url =
             ip === undefined
-                ? `https://geo.ipify.org/api/v2/country?apiKey=${API_Key}`
-                : `https://geo.ipify.org/api/v2/country?apiKey=${API_Key}&ipAddress=${ip}`;
+                ? `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=${API_Key}`
+                : `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=${API_Key}&ipAddress=${ip}`;
         const fetchData = () => {
             fetch(url)
                 .then((res) => res.json())
