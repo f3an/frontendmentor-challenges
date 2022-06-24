@@ -1,0 +1,36 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  width: 730px;
+}
+
+.DARK {
+  color: #fff;
+  background-color: #141d2f;
+}
+.LIGHT {
+  background-color: #f6f8ff;
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    height: 648px;
+    width: 573px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    height: 777px;
+    width: 375px;
+  }
+}
