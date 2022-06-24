@@ -1,9 +1,8 @@
 import './App.css';
-// eslint-disable-next-line no-unused-vars
 import Header from './components/header/header';
 import useYourIp from './hooks/use-your-ip';
 import React, { useState } from 'react';
-// eslint-disable-next-line no-unused-vars
+
 import IpDataContainer from './components/ip-data-container/ip-data-container';
 import Map from './components/map/map-container';
 

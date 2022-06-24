@@ -1,0 +1,49 @@
+.header {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 26px;
+  text-align: justify;
+  cursor: alias;
+}
+
+#theme-label {
+  width: 40px;
+  cursor: pointer;
+}
+
+.thame-indicator {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 13px;
+  color: #90a4d4;
+}
+
+.LIGHT-indicator:hover {
+  color: #000000;
+}
+
+.DARK-indicator:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    height: 38px;
+    width: 327px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    align-content: center;
+  }
+}
