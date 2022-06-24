@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const API_Key = 'at_2AsyijnrvdAqboByFJsf9M9pTAhhY';
+const API_Key = 'API_KEY';
 
 const useYourIp = (ip) => {
     const [ipData, setIpdata] = useState({});
