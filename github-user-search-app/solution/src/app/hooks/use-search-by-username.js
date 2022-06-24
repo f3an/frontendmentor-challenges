@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const authToken = "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";
+const authToken = "AUTH_TOKEN";
 
 function useSearchByUsername(id) {
   const [data, setData] = useState(null);
