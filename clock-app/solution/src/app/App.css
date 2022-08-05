@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+html,
+body,
+#root,
+#root > div {
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.clock-app {
+  width: 100%;
+  height: 100%;
+}
+
+.Light-body {
+  background-image: url("./assets/desktop/bg-image-daytime.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Dark-body {
+  background-image: url("./assets/desktop/bg-image-nighttime.jpg");
+}
